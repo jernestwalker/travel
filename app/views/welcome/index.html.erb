@@ -16,3 +16,16 @@
 	<% end %>
 </p> 
 
+<table class="table">
+	<tr>
+		<% @united_states.each do |k,v| %>
+		<th><%= k %></th>
+		<% end %>
+	</tr>
+	<tr>
+		<% @united_states.each do |k,v| %>
+		<td><%= v %></td>
+		<% end %>
+	</tr>
+</table>
+

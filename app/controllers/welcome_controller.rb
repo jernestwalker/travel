@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   	@homeland = "Georgia"
   	@countries = ['Jordan','Croatia','Botswana', 'Belize']
   	@images = ['petra.jpg','croatia.jpg','botswana.jpg','belize.jpg']
+  	@united_states = {"Capital City" => "Washington DC", "Favorite City" => "Asheville, NC", "Favorite State" => "Oregon", "Flag Color" => "Red, White & Blue"}
   end
 
   def about
@@ -11,6 +12,6 @@ class WelcomeController < ApplicationController
   end
 
   def contact
-  	
+
   end
 end
