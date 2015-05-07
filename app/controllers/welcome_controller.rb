@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
+  
+
   def index
   	@homeland = "Georgia"
   	@countries = ['Jordan','Croatia','Botswana', 'Belize']
