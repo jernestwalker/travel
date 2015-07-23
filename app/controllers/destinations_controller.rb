@@ -34,6 +34,7 @@ class DestinationsController < ApplicationController
 
     respond_to do |format|
       if @destination.save
+        @destination.address = "#{@destination.city}, #{@destination.country}"
         format.html { redirect_to @destination, notice: 'Destination was successfully created.' }
         format.json { render :show, status: :created, location: @destination }
       else
@@ -48,6 +49,7 @@ class DestinationsController < ApplicationController
   def update
     respond_to do |format|
       if @destination.update(destination_params)
+        @destination.address = "#{@destination.city}, #{@destination.country}"
         format.html { redirect_to @destination, notice: 'Destination was successfully updated.' }
         format.json { render :show, status: :ok, location: @destination }
       else

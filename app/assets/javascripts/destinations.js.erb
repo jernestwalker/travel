@@ -29,13 +29,13 @@ $(document).ready(function (){
       var map = new google.maps.Map(document.getElementById('destination-map'),
                 mapOptions);   
 
-     	var image = "<%= asset_path 'flag_australia.png' %>"
+
 
       var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       title: 'G-day, Mate!',
-      icon: image,
+
       animation: google.maps.Animation.DROP,
   		}); 
 

@@ -29,18 +29,18 @@ $(document).ready(function (){
       var map = new google.maps.Map(document.getElementById('map-canvas'),
                 mapOptions);   
 
-     	var image = "<%= asset_path 'flag_australia.png' %>"
+     	
 
       var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       title: 'G-day, Mate!',
-      icon: image,
+    
       animation: google.maps.Animation.DROP,
   		}); 
 
 			 var contentString = '<h2>Wagga Wagga</h2>' +
-			   '<p>On the banks of the magnificent Murrumbidgee River, we’re more than just the largest regional city in New South Wales – we’re an Australian icon – and we can’t wait to share our secrets with you!</p>'
+			   '<p>On the banks of the magnificent Murrumbidgee River, Wagga Wagga more than just the largest regional city in New South Wales – it\'s an Australian icon – and we can’t wait to share our secrets with you!</p>'
 			 ;
 
 			 var infowindow = new google.maps.InfoWindow({
