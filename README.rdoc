@@ -1,3 +1,5 @@
+A fair amount of work using Bootstrap. Includes nav bar, embedded Google Map, page color change, etc. 
+
 == README
 
 This README would normally document whatever steps are necessary to get the
